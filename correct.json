@@ -1,0 +1,181 @@
+{
+	"version": "0.6",
+	"reqId": "0",
+	"status": "ok",
+	"sig": "143901053",
+	"table": {
+		"cols": [
+			{ "id": "A", "label": "Date", "type": "string" },
+			{ "id": "B", "label": "Time", "type": "string" },
+			{ "id": "C", "label": "Place", "type": "string" },
+			{ "id": "D", "label": "Team1", "type": "string" },
+			{ "id": "E", "label": "Team2", "type": "string" },
+			{
+				"id": "F",
+				"label": "Result1",
+				"type": "number",
+				"pattern": "General"
+			},
+			{
+				"id": "G",
+				"label": "Result2",
+				"type": "number",
+				"pattern": "General"
+			},
+			{ "id": "H", "label": "Logo1", "type": "string" },
+			{ "id": "I", "label": "Logo2", "type": "string" }
+		],
+		"rows": [
+			{
+				"c": [
+					{ "v": "25.2.2023" },
+					{ "v": "10:00" },
+					{ "v": "Stadion Josefa Kohouta" },
+					{ "v": "RC Mountfield Říčany" },
+					{ "v": "RC Zlín" },
+					{ "v": 88.0, "f": "88" },
+					{ "v": 0.0, "f": "0" },
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-ricany.png"
+					},
+					{ "v": "https://zwa7y.solidpixels.com/files/logo-zlin.png" }
+				]
+			},
+			{
+				"c": [
+					{ "v": "4.3.2023" },
+					null,
+					null,
+					{ "v": "RC Mountfield Říčany" },
+					{ "v": "RC Tatra Smíchov" },
+					{ "v": 13.0, "f": "13" },
+					{ "v": 8.0, "f": "8" },
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-ricany.png"
+					},
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-tatra.png"
+					}
+				]
+			},
+			{
+				"c": [
+					{ "v": "11.3.2023" },
+					null,
+					null,
+					{ "v": "RC Sparta Praha" },
+					{ "v": "RC Mountfield Říčany" },
+					{ "v": 3.0, "f": "3" },
+					{ "v": 18.0, "f": "18" },
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-sparta.png"
+					},
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-ricany.png"
+					}
+				]
+			},
+			{
+				"c": [
+					{ "v": "25.3.2023" },
+					null,
+					null,
+					{ "v": "RC Mountfield Říčany" },
+					{ "v": "RC Praga Praha" },
+					{ "v": 42.0, "f": "42" },
+					{ "v": 12.0, "f": "12" },
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-ricany.png"
+					},
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-praga.png"
+					}
+				]
+			},
+			{
+				"c": [
+					{ "v": "1.4.2023" },
+					null,
+					null,
+					{ "v": "JIMI RC Vyškov" },
+					{ "v": "RC Mountfield Říčany" },
+					{ "v": 12.0, "f": "12" },
+					{ "v": 30.0, "f": "30" },
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-vyskov.png"
+					},
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-ricany.png"
+					}
+				]
+			},
+			{
+				"c": [
+					{ "v": "8.4.2023" },
+					null,
+					null,
+					{ "v": "RC Mountfield Říčany" },
+					{ "v": "RC Dragon Brno" },
+					{ "v": 41.0, "f": "41" },
+					{ "v": 8.0, "f": "8" },
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-ricany.png"
+					},
+					{ "v": "https://zwa7y.solidpixels.com/files/logo-brno.png" }
+				]
+			},
+			{
+				"c": [
+					{ "v": "6.5.2023" },
+					null,
+					null,
+					{ "v": "RC Slavia Praha" },
+					{ "v": "RC Mountfield Říčany" },
+					{ "v": 15.0, "f": "15" },
+					{ "v": 42.0, "f": "42" },
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-slavia.png"
+					},
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-ricany.png"
+					}
+				]
+			},
+			{
+				"c": [
+					{ "v": "13.5.2023" },
+					null,
+					null,
+					{ "v": "RC Mountfield Říčany" },
+					{ "v": "RC Tatra Smíchov" },
+					{ "v": 17.0, "f": "17" },
+					{ "v": 5.0, "f": "5" },
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-ricany.png"
+					},
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-tatra.png"
+					}
+				]
+			},
+			{
+				"c": [
+					{ "v": "20.5.2023" },
+					null,
+					null,
+					{ "v": "RC Mountfield Říčany" },
+					{ "v": "RC Sparta Praha" },
+					{ "v": 16.0, "f": "16" },
+					{ "v": 9.0, "f": "9" },
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-ricany.png"
+					},
+					{
+						"v": "https://zwa7y.solidpixels.com/files/logo-sparta.png"
+					}
+				]
+			}
+		],
+		"parsedNumHeaders": 1
+	}
+}

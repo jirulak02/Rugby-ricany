@@ -1,0 +1,35 @@
+{
+	"version": "0.6",
+	"reqId": "0",
+	"status": "ok",
+	"sig": "61475778",
+	"table": {
+		"cols": [
+			{ "id": "A", "label": "", "type": "string" },
+			{ "id": "B", "label": "", "type": "string" },
+			{ "id": "C", "label": "", "type": "string" },
+			{ "id": "D", "label": "", "type": "string" },
+			{ "id": "E", "label": "", "type": "string" },
+			{ "id": "F", "label": "", "type": "string" },
+			{ "id": "G", "label": "", "type": "string" },
+			{ "id": "H", "label": "", "type": "string" },
+			{ "id": "I", "label": "", "type": "string" }
+		],
+		"rows": [
+			{
+				"c": [
+					{ "v": "Date" },
+					{ "v": "Time" },
+					{ "v": "Place" },
+					{ "v": "Team1" },
+					{ "v": "Team2" },
+					{ "v": "Result1" },
+					{ "v": "Result2" },
+					{ "v": "Logo1" },
+					{ "v": "Logo2" }
+				]
+			}
+		],
+		"parsedNumHeaders": 0
+	}
+}
