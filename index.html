@@ -1,123 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-	</head>
-	<style>
-		.card-vlastni {
-			width: 100%;
-			background-color: white;
-			padding: 20px;
-			border: 1px #1c1c1c solid;
-			margin-bottom: 15px;
-		}
-		.second-vlastni {
-			display: grid;
-			grid-template-columns: repeat(3, minmax(0, 1fr));
-			margin: auto;
-		}
-		.team-vlastni {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			margin: auto;
-			text-align: center;
-		}
-		.team-vlastni img {
-			margin: auto;
-		}
-		.score-vlastni {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
-		}
-		.date-vlastni {
-			margin-bottom: 4px;
-		}
-		.place-vlastni {
-			margin-top: 4px;
-			min-height: 23.38px;
-		}
-		.menu-vlastni {
-			display: grid;
-			grid-template-columns: repeat(6, minmax(0, 1fr));
-			text-align: center;
-			margin-bottom: 15px;
-		}
-		.menu-vlastni a {
-			text-decoration-line: none;
-		}
-		.menu-vlastni a:hover {
-			color: #2aa9e1;
-			border-bottom: 2px #2aa9e1 solid;
-		}
-		.menu-div-vlastni {
-			cursor: pointer;
-			border-bottom: 1px #1c1c1c solid;
-			border-top: 1px #1c1c1c solid;
-		}
-		.menu-div-vlastni:hover {
-			border-bottom: 2px #2aa9e1 solid;
-		}
-		.menu-vlastni h3 {
-			padding: 5px;
-			margin-top: 5px;
-			margin-bottom: 5px;
-		}
-		.menu-vlastni h3:hover {
-			color: #2aa9e1;
-		}
-		.left-border-vlastni {
-			border-left: 1px #1c1c1c solid;
-		}
-		.menu-a-vlastni {
-			border-bottom: 1px #1c1c1c solid;
-			border-top: 1px #1c1c1c solid;
-		}
-		.active-vlastni {
-			border-bottom: 2px #1c1c1c solid;
-		}
-		.fallback-vlastni {
-			text-align: center;
-		}
-		@media (max-width: 740px) {
-			.menu-vlastni {
-				grid-template-columns: repeat(3, minmax(0, 1fr));
-			}
-			.left-border-vlastni {
-				border-left: 0;
-			}
-			.menu-div-vlastni {
-				margin-top: 15px;
-			}
-			.score-vlastni {
-				order: 9999;
-				grid-column: span 2 / span 2;
-			}
-			.second-vlastni {
-				grid-template-columns: repeat(2, minmax(0, 1fr));
-			}
-			.date-vlastni {
-				margin-top: 4px;
-			}
-			.place-vlastni {
-				margin-bottom: 4px;
-			}
-			.team-vlastni h3 {
-				margin-top: 20px;
-			}
-			.score-vlastni h2 {
-				margin-top: 20px;
-			}
-		}
-	</style>
-	<body>
-		<div>
-			<!-- MATCH CARD TEMPLATE -->
-			<!-- <div class="card-vlastni">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .card-vlastni {
+      width: 100%;
+      background-color: white;
+      padding: 20px;
+      border: 1px #1c1c1c solid;
+      margin-bottom: 15px;
+    }
+    .second-vlastni {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin: auto;
+    }
+    .team-vlastni {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      text-align: center;
+    }
+    .team-vlastni img {
+      margin: auto;
+    }
+    .score-vlastni {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .date-vlastni {
+      margin-bottom: 4px;
+    }
+    .place-vlastni {
+      margin-top: 4px;
+      min-height: 23.38px;
+    }
+    .menu-vlastni {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .menu-vlastni a {
+      text-decoration-line: none;
+    }
+    .menu-vlastni a:hover {
+      color: #2aa9e1;
+      border-bottom: 2px #2aa9e1 solid;
+    }
+    .menu-div-vlastni {
+      cursor: pointer;
+      border-bottom: 1px #1c1c1c solid;
+      border-top: 1px #1c1c1c solid;
+    }
+    .menu-div-vlastni:hover {
+      border-bottom: 2px #2aa9e1 solid;
+    }
+    .menu-vlastni h3 {
+      padding: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .menu-vlastni h3:hover {
+      color: #2aa9e1;
+    }
+    .left-border-vlastni {
+      border-left: 1px #1c1c1c solid;
+    }
+    .menu-a-vlastni {
+      border-bottom: 1px #1c1c1c solid;
+      border-top: 1px #1c1c1c solid;
+    }
+    .active-vlastni {
+      border-bottom: 2px #1c1c1c solid;
+    }
+    .fallback-vlastni {
+      text-align: center;
+    }
+    @media (max-width: 740px) {
+      .menu-vlastni {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .left-border-vlastni {
+        border-left: 0;
+      }
+      .menu-div-vlastni {
+        margin-top: 15px;
+      }
+      .score-vlastni {
+        order: 9999;
+        grid-column: span 2 / span 2;
+      }
+      .second-vlastni {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .date-vlastni {
+        margin-top: 4px;
+      }
+      .place-vlastni {
+        margin-bottom: 4px;
+      }
+      .team-vlastni h3 {
+        margin-top: 20px;
+      }
+      .score-vlastni h2 {
+        margin-top: 20px;
+      }
+    }
+  </style>
+  <body>
+    <div>
+      <!-- MATCH CARD TEMPLATE -->
+      <!-- <div class="card-vlastni">
 				<div class="second-vlastni">
 					<div class="team-vlastni">
 						<img
@@ -148,276 +148,269 @@
 					</div>
 				</div>
 			</div> -->
-			<div class="menu-vlastni">
-				<a href="/zapasy-muzi" class="menu-a-vlastni active-vlastni">
-					<div><h3>Muži</h3></div>
-				</a>
-				<a href="/zapasy-zeny" class="menu-a-vlastni">
-					<div><h3>Ženy</h3></div>
-				</a>
-				<a href="/zapasy-mladez" class="menu-a-vlastni">
-					<div><h3>Děti a mládež</h3></div>
-				</a>
-				<div
-					class="menu-div-vlastni left-border-vlastni"
-					onclick="toggleLigy('extraliga')"
-					id="menu-extraliga"
-				>
-					<h3>Extraliga</h3>
-				</div>
-				<div
-					class="menu-div-vlastni"
-					onclick="toggleLigy('prvniLiga')"
-					id="menu-prvniLiga"
-				>
-					<h3>První liga</h3>
-				</div>
-				<div
-					class="menu-div-vlastni"
-					onclick="toggleLigy('pohar')"
-					id="menu-pohar"
-				>
-					<h3>Pohár ČSRU</h3>
-				</div>
-			</div>
-			<div id="tabulka-extraliga-vlastni"></div>
-			<div id="tabulka-prvniLiga-vlastni"></div>
-			<div id="tabulka-pohar-vlastni"></div>
-		</div>
-		<script>
-			const extraliga = document.getElementById(
-				"tabulka-extraliga-vlastni"
-			);
-			const prvniLiga = document.getElementById(
-				"tabulka-prvniLiga-vlastni"
-			);
-			const pohar = document.getElementById("tabulka-pohar-vlastni");
-			prvniLiga.style.display = "none";
-			pohar.style.display = "none";
-			const menuExtraliga = document.getElementById("menu-extraliga");
-			const menuPrvniLiga = document.getElementById("menu-prvniLiga");
-			const menuPohar = document.getElementById("menu-pohar");
-			menuExtraliga.classList.add("active-vlastni");
+      <div class="menu-vlastni">
+        <a href="/zapasy-muzi" class="menu-a-vlastni active-vlastni">
+          <div><h3>Muži</h3></div>
+        </a>
+        <a href="/zapasy-zeny" class="menu-a-vlastni">
+          <div><h3>Ženy</h3></div>
+        </a>
+        <a href="/zapasy-mladez" class="menu-a-vlastni">
+          <div><h3>Děti a mládež</h3></div>
+        </a>
+        <div
+          class="menu-div-vlastni left-border-vlastni"
+          onclick="toggleLigy('extraliga')"
+          id="menu-extraliga"
+        >
+          <h3>Extraliga</h3>
+        </div>
+        <div
+          class="menu-div-vlastni"
+          onclick="toggleLigy('prvniLiga')"
+          id="menu-prvniLiga"
+        >
+          <h3>První liga</h3>
+        </div>
+        <div
+          class="menu-div-vlastni"
+          onclick="toggleLigy('pohar')"
+          id="menu-pohar"
+        >
+          <h3>Pohár ČSRU</h3>
+        </div>
+      </div>
+      <div id="tabulka-extraliga-vlastni"></div>
+      <div id="tabulka-prvniLiga-vlastni"></div>
+      <div id="tabulka-pohar-vlastni"></div>
+    </div>
+    <script>
+      const extraliga = document.getElementById("tabulka-extraliga-vlastni");
+      const prvniLiga = document.getElementById("tabulka-prvniLiga-vlastni");
+      const pohar = document.getElementById("tabulka-pohar-vlastni");
+      prvniLiga.style.display = "none";
+      pohar.style.display = "none";
+      const menuExtraliga = document.getElementById("menu-extraliga");
+      const menuPrvniLiga = document.getElementById("menu-prvniLiga");
+      const menuPohar = document.getElementById("menu-pohar");
+      menuExtraliga.classList.add("active-vlastni");
 
-			getData("0", "tabulka-extraliga-vlastni");
-			getData("1003969637", "tabulka-prvniLiga-vlastni");
-			getData("1043435698", "tabulka-pohar-vlastni");
+      getData("0", "tabulka-extraliga-vlastni");
+      getData("1003969637", "tabulka-prvniLiga-vlastni");
+      getData("1043435698", "tabulka-pohar-vlastni");
 
-			function getData(gid, id) {
-				let sheetId = "1zoYn4sLZoEVP5DNW5jz4SmjeQINvoQqd_B305t7jY-4";
-				let url =
-					"https://docs.google.com/spreadsheets/d/" +
-					sheetId +
-					"/gviz/tq?tqx=out:json&tq&gid=" +
-					gid;
+      function getData(gid, id) {
+        let sheetId = process.env.SHEET_ID;
+        let url =
+          "https://docs.google.com/spreadsheets/d/" +
+          sheetId +
+          "/gviz/tq?tqx=out:json&tq&gid=" +
+          gid;
 
-				fetch(url)
-					.then((response) => response.text())
-					.then((data) => {
-						let json_string = data.substring(47).slice(0, -2);
-						let details = getMatches(JSON.parse(json_string));
-						document.getElementById(id).innerHTML = details;
-					});
-			}
+        fetch(url)
+          .then((response) => response.text())
+          .then((data) => {
+            let json_string = data.substring(47).slice(0, -2);
+            let details = getMatches(JSON.parse(json_string));
+            document.getElementById(id).innerHTML = details;
+          });
+      }
 
-			function toggleLigy(kliknuto) {
-				if (kliknuto === "extraliga") {
-					extraliga.style.display = "block";
-					prvniLiga.style.display = "none";
-					pohar.style.display = "none";
-					menuExtraliga.classList.add("active-vlastni");
-					menuPrvniLiga.classList.remove("active-vlastni");
-					menuPohar.classList.remove("active-vlastni");
-				}
-				if (kliknuto === "prvniLiga") {
-					extraliga.style.display = "none";
-					prvniLiga.style.display = "block";
-					pohar.style.display = "none";
-					menuExtraliga.classList.remove("active-vlastni");
-					menuPrvniLiga.classList.add("active-vlastni");
-					menuPohar.classList.remove("active-vlastni");
-				}
-				if (kliknuto === "pohar") {
-					extraliga.style.display = "none";
-					prvniLiga.style.display = "none";
-					pohar.style.display = "block";
-					menuExtraliga.classList.remove("active-vlastni");
-					menuPrvniLiga.classList.remove("active-vlastni");
-					menuPohar.classList.add("active-vlastni");
-				}
-			}
+      function toggleLigy(kliknuto) {
+        if (kliknuto === "extraliga") {
+          extraliga.style.display = "block";
+          prvniLiga.style.display = "none";
+          pohar.style.display = "none";
+          menuExtraliga.classList.add("active-vlastni");
+          menuPrvniLiga.classList.remove("active-vlastni");
+          menuPohar.classList.remove("active-vlastni");
+        }
+        if (kliknuto === "prvniLiga") {
+          extraliga.style.display = "none";
+          prvniLiga.style.display = "block";
+          pohar.style.display = "none";
+          menuExtraliga.classList.remove("active-vlastni");
+          menuPrvniLiga.classList.add("active-vlastni");
+          menuPohar.classList.remove("active-vlastni");
+        }
+        if (kliknuto === "pohar") {
+          extraliga.style.display = "none";
+          prvniLiga.style.display = "none";
+          pohar.style.display = "block";
+          menuExtraliga.classList.remove("active-vlastni");
+          menuPrvniLiga.classList.remove("active-vlastni");
+          menuPohar.classList.add("active-vlastni");
+        }
+      }
 
-			function escapeHtml(input) {
-				let tempDiv = document.createElement("div");
-				tempDiv.appendChild(document.createTextNode(input));
-				return tempDiv.innerHTML;
-			}
+      function escapeHtml(input) {
+        let tempDiv = document.createElement("div");
+        tempDiv.appendChild(document.createTextNode(input));
+        return tempDiv.innerHTML;
+      }
 
-			function getMatches(json) {
-				let details = "";
+      function getMatches(json) {
+        let details = "";
 
-				if (!json.table.rows[1]) {
-					details +=
-						"<div class='card-vlastni'> <div class='fallback-vlastni'> <p>Aktuálně zde nejsou žádné zápasy.</p> </div> </div>";
-					return details;
-				}
+        if (!json.table.rows[1]) {
+          details +=
+            "<div class='card-vlastni'> <div class='fallback-vlastni'> <p>Aktuálně zde nejsou žádné zápasy.</p> </div> </div>";
+          return details;
+        }
 
-				if (
-					json.table.cols[0].label !== "Date" &&
-					json.table.cols[0].label !== ""
-				) {
-					let value = "";
-					details +=
-						"<div class='card-vlastni'> <div class='second-vlastni'> <div class='team-vlastni'> <img src='";
+        if (
+          json.table.cols[0].label !== "Date" &&
+          json.table.cols[0].label !== ""
+        ) {
+          let value = "";
+          details +=
+            "<div class='card-vlastni'> <div class='second-vlastni'> <div class='team-vlastni'> <img src='";
 
-					try {
-						value = json.table.cols[7].label.substring(6);
-					} catch (e) {
-						value = "";
-					}
-					details +=
-						escapeHtml(value) +
-						"' width='80px' height='80px' loading='lazy' /> <h3>";
+          try {
+            value = json.table.cols[7].label.substring(6);
+          } catch (e) {
+            value = "";
+          }
+          details +=
+            escapeHtml(value) +
+            "' width='80px' height='80px' loading='lazy' /> <h3>";
 
-					try {
-						value = json.table.cols[3].label.substring(6);
-					} catch (e) {
-						value = "";
-					}
-					details +=
-						escapeHtml(value) +
-						"</h3> </div> <div class='score-vlastni'> <div> <h2> - </h2> <h5 class='date-vlastni'>";
+          try {
+            value = json.table.cols[3].label.substring(6);
+          } catch (e) {
+            value = "";
+          }
+          details +=
+            escapeHtml(value) +
+            "</h3> </div> <div class='score-vlastni'> <div> <h2> - </h2> <h5 class='date-vlastni'>";
 
-					try {
-						value = json.table.cols[0].label.substring(5);
-					} catch (e) {
-						value = "";
-					}
-					details += escapeHtml(value) + " ";
+          try {
+            value = json.table.cols[0].label.substring(5);
+          } catch (e) {
+            value = "";
+          }
+          details += escapeHtml(value) + " ";
 
-					try {
-						value = json.table.cols[1].label.substring(5);
-					} catch (e) {
-						value = "";
-					}
-					details +=
-						escapeHtml(value) + "</h5> <h5 class='place-vlastni'>";
+          try {
+            value = json.table.cols[1].label.substring(5);
+          } catch (e) {
+            value = "";
+          }
+          details += escapeHtml(value) + "</h5> <h5 class='place-vlastni'>";
 
-					try {
-						value = json.table.cols[2].label.substring(6);
-					} catch (e) {
-						value = "";
-					}
-					details +=
-						escapeHtml(value) +
-						"</h5> </div> </div> <div class='team-vlastni'> <img src='";
+          try {
+            value = json.table.cols[2].label.substring(6);
+          } catch (e) {
+            value = "";
+          }
+          details +=
+            escapeHtml(value) +
+            "</h5> </div> </div> <div class='team-vlastni'> <img src='";
 
-					try {
-						value = json.table.cols[8].label.substring(6);
-					} catch (e) {
-						value = "";
-					}
-					details +=
-						escapeHtml(value) +
-						"' width='80px' height='80px' loading='lazy' /> <h3>";
+          try {
+            value = json.table.cols[8].label.substring(6);
+          } catch (e) {
+            value = "";
+          }
+          details +=
+            escapeHtml(value) +
+            "' width='80px' height='80px' loading='lazy' /> <h3>";
 
-					try {
-						value = json.table.cols[4].label.substring(5);
-					} catch (e) {
-						value = "";
-					}
-					details += escapeHtml(value) + "</h3> </div> </div> </div>";
-				}
+          try {
+            value = json.table.cols[4].label.substring(5);
+          } catch (e) {
+            value = "";
+          }
+          details += escapeHtml(value) + "</h3> </div> </div> </div>";
+        }
 
-				let i = 0;
+        let i = 0;
 
-				if (json.table.rows[0].c[0].v === "Date") {
-					i = 1;
-				}
+        if (json.table.rows[0].c[0].v === "Date") {
+          i = 1;
+        }
 
-				while (i < json.table.rows.length) {
-					let value = "";
-					let row = json.table.rows[i];
-					details +=
-						"<div class='card-vlastni'> <div class='second-vlastni'> <div class='team-vlastni'> <img src='";
+        while (i < json.table.rows.length) {
+          let value = "";
+          let row = json.table.rows[i];
+          details +=
+            "<div class='card-vlastni'> <div class='second-vlastni'> <div class='team-vlastni'> <img src='";
 
-					try {
-						value = row.c[7].f ? row.c[7].f : row.c[7].v;
-					} catch (e) {
-						value = "";
-					}
-					details +=
-						escapeHtml(value) +
-						"' width='80px' height='80px' loading='lazy' /> <h3>";
+          try {
+            value = row.c[7].f ? row.c[7].f : row.c[7].v;
+          } catch (e) {
+            value = "";
+          }
+          details +=
+            escapeHtml(value) +
+            "' width='80px' height='80px' loading='lazy' /> <h3>";
 
-					try {
-						value = row.c[3].f ? row.c[3].f : row.c[3].v;
-					} catch (e) {
-						value = "";
-					}
-					details +=
-						escapeHtml(value) +
-						"</h3> </div> <div class='score-vlastni'> <div> <h2>";
+          try {
+            value = row.c[3].f ? row.c[3].f : row.c[3].v;
+          } catch (e) {
+            value = "";
+          }
+          details +=
+            escapeHtml(value) +
+            "</h3> </div> <div class='score-vlastni'> <div> <h2>";
 
-					try {
-						value = row.c[5].f ? row.c[5].f : row.c[5].v;
-					} catch (e) {
-						value = "";
-					}
-					details += escapeHtml(value) + " - ";
+          try {
+            value = row.c[5].f ? row.c[5].f : row.c[5].v;
+          } catch (e) {
+            value = "";
+          }
+          details += escapeHtml(value) + " - ";
 
-					try {
-						value = row.c[6].f ? row.c[6].f : row.c[6].v;
-					} catch (e) {
-						value = "";
-					}
-					details +=
-						escapeHtml(value) + "</h2> <h5 class='date-vlastni'>";
+          try {
+            value = row.c[6].f ? row.c[6].f : row.c[6].v;
+          } catch (e) {
+            value = "";
+          }
+          details += escapeHtml(value) + "</h2> <h5 class='date-vlastni'>";
 
-					try {
-						value = row.c[0].f ? row.c[0].f : row.c[0].v;
-					} catch (e) {
-						value = "";
-					}
-					details += escapeHtml(value) + " ";
+          try {
+            value = row.c[0].f ? row.c[0].f : row.c[0].v;
+          } catch (e) {
+            value = "";
+          }
+          details += escapeHtml(value) + " ";
 
-					try {
-						value = row.c[1].f ? row.c[1].f : row.c[1].v;
-					} catch (e) {
-						value = "";
-					}
-					details +=
-						escapeHtml(value) + "</h5> <h5 class='place-vlastni'>";
+          try {
+            value = row.c[1].f ? row.c[1].f : row.c[1].v;
+          } catch (e) {
+            value = "";
+          }
+          details += escapeHtml(value) + "</h5> <h5 class='place-vlastni'>";
 
-					try {
-						value = row.c[2].f ? row.c[2].f : row.c[2].v;
-					} catch (e) {
-						value = "";
-					}
-					details +=
-						escapeHtml(value) +
-						"</h5> </div> </div> <div class='team-vlastni'> <img src='";
+          try {
+            value = row.c[2].f ? row.c[2].f : row.c[2].v;
+          } catch (e) {
+            value = "";
+          }
+          details +=
+            escapeHtml(value) +
+            "</h5> </div> </div> <div class='team-vlastni'> <img src='";
 
-					try {
-						value = row.c[8].f ? row.c[8].f : row.c[8].v;
-					} catch (e) {
-						value = "";
-					}
-					details +=
-						escapeHtml(value) +
-						"' width='80px' height='80px' loading='lazy' /> <h3>";
+          try {
+            value = row.c[8].f ? row.c[8].f : row.c[8].v;
+          } catch (e) {
+            value = "";
+          }
+          details +=
+            escapeHtml(value) +
+            "' width='80px' height='80px' loading='lazy' /> <h3>";
 
-					try {
-						value = row.c[4].f ? row.c[4].f : row.c[4].v;
-					} catch (e) {
-						value = "";
-					}
-					details += escapeHtml(value) + "</h3> </div> </div> </div>";
-					i++;
-				}
+          try {
+            value = row.c[4].f ? row.c[4].f : row.c[4].v;
+          } catch (e) {
+            value = "";
+          }
+          details += escapeHtml(value) + "</h3> </div> </div> </div>";
+          i++;
+        }
 
-				return details;
-			}
-		</script>
-	</body>
+        return details;
+      }
+    </script>
+  </body>
 </html>
